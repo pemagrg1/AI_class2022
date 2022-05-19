@@ -5,7 +5,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.datasets import fetch_20newsgroups  # using the dataset from sklearn
 from sklearn.metrics import confusion_matrix, accuracy_score
 from sklearn.metrics import plot_confusion_matrix
-
+from sklearn.linear_model import SGDClassifier
 
 # TAKING ['alt.atheism', 'soc.religion.christian','comp.graphics', 'sci.med'] categories out of 20 categories from fetch_20newsgroups
 categories = ['alt.atheism', 'soc.religion.christian',
@@ -30,10 +30,13 @@ X_train_tfidf = tfidf_transformer.fit_transform(X_train_counts)
 
 
 # LOADING THE MACHINE LEARNING MODEL
-clf = MultinomialNB()
+MultinomialNB_model = MultinomialNB()
+sgd_model = SGDClassifier(loss='hinge', penalty='l2',
+                          alpha=1e-3, random_state=42, max_iter=5, tol=None)
 
 # TRAINING THE MODEL WITH THE DATA AND LABELS
-clf.fit(X_train_tfidf, train_labels)
+clf = MultinomialNB_model.fit(X_train_tfidf, train_labels)
+clf2 = sgd_model.fit(X_train_tfidf, twenty_train.target)
 
 
 # TESTING THE TEST DATA ON THE TRAINED MODEL
@@ -42,10 +45,19 @@ X_new_counts = count_vect.transform(test)
 X_new_tfidf = tfidf_transformer.transform(X_new_counts)
 # Test the data using the trained model
 y_pred = clf.predict(X_new_tfidf)
+y_pred2 = clf2.predict(X_new_tfidf)
 
-# TESTING THE ACCURACY
+# TESTING THE ACCURACY of MultinomialNB_model
 cm = confusion_matrix(test_labels, y_pred)
 ac = accuracy_score(test_labels, y_pred)
+print("ACCURACY:", ac)
+print()
+print("CONFUSION MATRIX:\n", cm)
+
+
+# TESTING THE ACCURACY of SGD model
+cm = confusion_matrix(test_labels, y_pred2)
+ac = accuracy_score(test_labels, y_pred2)
 print("ACCURACY:", ac)
 print()
 print("CONFUSION MATRIX:\n", cm)
