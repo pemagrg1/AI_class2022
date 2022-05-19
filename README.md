@@ -13,5 +13,15 @@ Artificial Intelligence <br>
 
 
 # Tutorials
-#### Machine Learning
+#### Getting started with Git 
+https://youtu.be/iv8rSLsi1xo
+
+#### Python tutorial
+https://www.tutorialspoint.com/python/index.htm
+
+#### Machine Learning Course
 https://www.udacity.com/course/intro-to-machine-learning--ud120
+
+#### Ref for Notebooks on AI
+https://www.kaggle.com/
+
