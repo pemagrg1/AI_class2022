@@ -50,14 +50,15 @@ y_pred2 = clf2.predict(X_new_tfidf)
 # TESTING THE ACCURACY of MultinomialNB_model
 cm = confusion_matrix(test_labels, y_pred)
 ac = accuracy_score(test_labels, y_pred)
+print("===TESTING THE ACCURACY of MultinomialNB model===")
 print("ACCURACY:", ac)
-print()
 print("CONFUSION MATRIX:\n", cm)
+print()
 
 
 # TESTING THE ACCURACY of SGD model
 cm = confusion_matrix(test_labels, y_pred2)
 ac = accuracy_score(test_labels, y_pred2)
+print("===TESTING THE ACCURACY of SGD model===")
 print("ACCURACY:", ac)
-print()
 print("CONFUSION MATRIX:\n", cm)
