@@ -1,2 +1,5 @@
 .ipynb_checkpoints/
 notebooks/.ipynb_checkpoints/Naive Bayes-checkpoint.ipynb
+.DS_Store
+notes.txt
+slides/.DS_Store

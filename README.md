@@ -1,11 +1,23 @@
 # AI_class2022
 Artificial Intelligence <br>
 
+# Prerequisites
+- Python 3.6 & above
+- install the libraries from requirements.txt
+
 # Includes:
 - Book
 - PPT
 - Tutorials
 - Videos link
+
+# Chapters
+1. Introduction:
+2. Intelligent Agents:
+3. Problem Solving by Searching:
+4. Knowledge Representation: 
+5. Machine Learning: ML: Ch 19-20, DL: Ch 21-
+6. Applications of AI: 
 
 
 # Syllabus
