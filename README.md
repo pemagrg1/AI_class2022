@@ -16,7 +16,7 @@ Artificial Intelligence <br>
 2. Intelligent Agents:
 3. Problem Solving by Searching:
 4. Knowledge Representation: 
-5. Machine Learning: ML: Ch 19-20, DL: Ch 21-
+5. Machine Learning: 
 6. Applications of AI: 
 
 
