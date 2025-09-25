@@ -1,5 +1,19 @@
 # AI_class2022
-Artificial Intelligence <br>
+Artificial Intelligence Class Material<br>
+Taught by: [Pema Gurung](https://www.linkedin.com/in/pemagrg/) <br>
+<b>About Pema: </b><br>
+<i>AI enthusiast and NLP specialist with 4+ years of experience, currently pursuing an MS in Computational Linguistics in Germany and working as a Research Assistant in AI. Passionate about learning, innovation, and empowering others in tech. </i><br>
+- <b>Career Start: </b> NLP Engineer
+- <b>Current Designation:  </b>MSc. Computational Linguistic and Research Assistant and ML Teaching Assistant at Universität Stuttgart, Germany
+- <b>Expertise:  </b>Python, NLP, Machine Learning, Deep Learning, LLM, Artificial Intelligence
+- <b>Experience IT Service:  </b>5 Years
+  - Internship(NLP Engineer) at Meltwater, Bangalore, India
+  - ML/NLP Engineer at Awesummly, Bangalore, India
+  - NLP Engineer at Ekbana, Nepal
+  - NLP Team Lead at Ekbana, Nepal
+- <b>Experience Research Assistant:  </b>2 Years at University of Stuttgart
+
+
 
 # Prerequisites
 - Python 3.6 & above
